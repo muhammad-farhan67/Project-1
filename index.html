@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Login Portal</title>
+    <link rel="icon" href="img1.jpg">
+    <style>
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #97dce6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif }
+header,footer{
+    width: 100%;
+    text-align: center;
+    background-color:#2bb1c5;
+  
+    color: aliceblue;
+    padding:2px;
+    
+}
+.navitem {
+  display: inline;
+  padding: 20px;
+   
+    
+    display: inline;
+}
+.navitem a{  
+    text-decoration: none;
+    color: white;}
+.employee-form{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.employee-table{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+  
+    padding: 12px;
+}
+.details{
+text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <header  >
+        <h1>Welcome to HR Login Portal</h1>
+        <nav>
+            <ul >
+                <li class="navitem" ><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <img src="img2.jpeg" alt="image" width="100%" height="300">
+    <section class="employee-form">
+        <h2 id="employee-registration">Employee Registration</h2>
+        <p>Fill the form to register as a <em>employee:</em></p>
+<form action="post">
+        <label for="username">Username</label>
+        <input type="text" name="Username" id="username" placeholder="Enter Your Username" required > <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password" placeholder="Enter your Password" required autocomplete="off"> <br><br>
+        <label for="job-role">Job Role</label>
+       <select name="job role" id="job-role" required>  
+        <option value="software-engineer">Software Engineer</option>
+        <option value="AI-engineer">AI Engineer</option>
+        <option value="Finance-manager">Finance Manager</option>
+       </select>  <br><br>
+        <label for="joining-date">Joining Date</label>
+        <input type="date" name="joiningdate" id="joining-date" required> <br><br>
+        <pre>
+   <input type="reset" value="Reset">          <input type="submit" value="Submit"> 
+     
+
+</pre>
+    </form>
+    </section >
+    <section id="employee-directory" class="employee-table">
+        <h2>Employee Directory</h2>
+        <p>List of all registered <em>employees:</em></p> 
+        <table>
+            <tr><th>Employee ID</th>
+            <th>Employee Role</th>
+            <th>Employee Name</th></tr>
+            <tr><td>767</td>
+            <td>AI Engineer</td>
+            <td>Muhammad Farhan</td></tr>
+        
+            <tr><td>123</td>
+            <td>Software Engineer</td>
+            <td>Hasnain Atif</td></tr>
+<tr>
+    <td>342</td>
+    <td>Finance Manager</td>
+    <td>Muhammad Husnain</td>
+</tr>
+        </table>
+    </section>
+    <section id="contact-us" class="details">
+        <h3>Contact Us</h3>
+        <p>You can contact us on company@official.com or visit our office from 9am-5pm</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3404.2787901708502!2d73.071527!3d31.433990999999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1717255468555!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </section>
+    <footer >
+        <p>&copy; 2024 CompanyXYZ All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
